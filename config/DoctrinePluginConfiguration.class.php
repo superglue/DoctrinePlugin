@@ -25,7 +25,7 @@ class DoctrinePluginConfiguration
   
   public static function preConfig()
   {
-    require_once(dirname(__FILE__) . '/../lib/vendor/Doctrine/Doctrine.php');
+    require_once(dirname(__FILE__) . '/../lib/vendor/doctrine/lib/Doctrine/Doctrine.php');
     spl_autoload_register(array('Doctrine', 'autoload'));
   }
     
