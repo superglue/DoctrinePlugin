@@ -25,7 +25,7 @@ class DoctrineTask extends sgTask
     
     // spl_autoload_register(array('Doctrine', 'modelsAutoload'));
     spl_autoload_register(array('Doctrine', 'extensionsAutoload'));
-    $settings = sgConfiguration::get('settings', 'doctrine');
+    $settings = sgConfiguration::get('settings.DoctrinePlugin');
     $settings['generate_models_options']['suffix'] = '.class.php';
     
     $config = array(

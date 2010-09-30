@@ -42,7 +42,7 @@ class DoctrinePluginConfiguration
       return;
     }
     
-    $settings = sgConfiguration::get('settings', 'doctrine');
+    $settings = sgConfiguration::get('settings.DoctrinePlugin');
     Doctrine_Core::setExtensionsPath(self::getPath('extensions'));
     Doctrine_Core::setModelsDirectory(self::getPath('models'));
     $manager = Doctrine_Manager::getInstance();

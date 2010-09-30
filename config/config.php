@@ -1,6 +1,6 @@
 <?php
 return array(
-  'doctrine' => array(
+  'DoctrinePlugin' => array(
     'dsn' => 'sqlite://:memory:',
     'attributes' => array(
       Doctrine_Core::ATTR_MODEL_LOADING => Doctrine_Core::MODEL_LOADING_PEAR,
